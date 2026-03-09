@@ -3,7 +3,8 @@
 교안의 예제 코드를 직접 따라 작성하고 실행하는 프로젝트입니다.
 
 > 각 과제의 코드를 `Program.cs`에 작성하세요.
-> 이전 과제의 코드가 남아있으면 클래스 이름이 겹쳐서 오류가 발생할 수 있습니다. 이전 과제의 코드를 지우거나 주석 처리한 후 다음 과제를 진행하세요.
+> 이전 과제의 코드가 남아있으면 클래스 이름이 겹쳐서 오류가 발생할 수 있습니다.
+이전 과제의 코드를 지우거나 주석 처리한 후 다음 과제를 진행하세요.
 
 ---
 
@@ -11,7 +12,8 @@
 
 ### 1-1. 기본 개념
 
-`object` 변수에 문자열 `"Hello"`를 저장하고, `is string s` 패턴을 사용하여 타입 확인과 변수 선언을 동시에 수행하세요. 문자열의 길이를 출력합니다.
+`object` 변수에 문자열 `"Hello"`를 저장하고, `is string s` 패턴을 사용하여
+타입 확인과 변수 선언을 동시에 수행하세요. 문자열의 길이를 출력합니다.
 
 **실행 결과**
 
@@ -21,7 +23,8 @@
 
 ### 1-2. is 연산자와 타입 패턴
 
-`object` 변수에 정수 42를 저장하고, `is int number` 패턴으로 타입을 확인하세요. 정수이면 값과 제곱을 출력하고, 아니면 "정수가 아님"을 출력합니다.
+`object` 변수에 정수 42를 저장하고, `is int number` 패턴으로 타입을 확인하세요
+. 정수이면 값과 제곱을 출력하고, 아니면 "정수가 아님"을 출력합니다.
 
 **실행 결과**
 
@@ -32,7 +35,10 @@
 
 ### 1-3. switch 문에서의 타입 패턴
 
-`PrintInfo(object obj)` 메서드를 구현하세요. switch 문에서 타입 패턴을 사용하여 `int`, `double`, `string`, `bool` 등 타입별로 다른 메시지를 출력합니다. 정수 100, 실수 3.14, 문자열 "Hello", 불리언 true, `DateTime.Now`를 테스트하세요.
+`PrintInfo(object obj)` 메서드를 구현하세요.
+switch 문에서 타입 패턴을 사용하여 `int`, `double`, `string`, `bool` 등 
+타입별로 다른 메시지를 출력합니다. 정수 100, 실수 3.14, 문자열 "Hello", 
+불리언 true, `DateTime.Now`를 테스트하세요.
 
 **실행 결과**
 
@@ -48,7 +54,9 @@
 
 ## 2. 상수 패턴
 
-`CheckValue(object obj)` 메서드를 구현하세요. `is` 연산자와 상수 패턴을 사용하여 값이 `0`, `"Hello"`, `null`, 그 외인지 확인합니다. 0, "Hello", null, 42를 테스트하세요.
+`CheckValue(object obj)` 메서드를 구현하세요. 
+`is` 연산자와 상수 패턴을 사용하여 값이 `0`, `"Hello"`, `null`,
+그 외인지 확인합니다. 0, "Hello", null, 42를 테스트하세요.
 
 **실행 결과**
 
@@ -65,7 +73,8 @@
 
 ### 3-1. 기본 문법
 
-`GetDayType(DayOfWeek day)` 메서드를 switch 식으로 구현하세요. 토요일과 일요일은 "주말", 나머지는 "평일"을 반환합니다.
+`GetDayType(DayOfWeek day)` 메서드를 switch 식으로 구현하세요.
+토요일과 일요일은 "주말", 나머지는 "평일"을 반환합니다.
 
 **실행 결과**
 
@@ -76,7 +85,8 @@
 
 ### 3-2. switch 식과 타입 패턴
 
-`DescribeValue(object obj)` 메서드를 switch 식과 타입 패턴으로 구현하세요. `int`, `double`, `string`, `null` 등 타입별로 다른 설명을 반환합니다.
+`DescribeValue(object obj)` 메서드를 switch 식과 타입 패턴으로 구현하세요.
+`int`, `double`, `string`, `null` 등 타입별로 다른 설명을 반환합니다.
 
 **실행 결과**
 
@@ -94,7 +104,8 @@ null 값
 
 ### 4-1. 성적 등급
 
-`GetGrade(int score)` 메서드를 switch 식과 관계 패턴으로 구현하세요. 90점 이상 A, 80점 이상 B, 70점 이상 C, 60점 이상 D, 그 외 F를 반환합니다.
+`GetGrade(int score)` 메서드를 switch 식과 관계 패턴으로 구현하세요. 
+90점 이상 A, 80점 이상 B, 70점 이상 C, 60점 이상 D, 그 외 F를 반환합니다.
 
 **실행 결과**
 
@@ -108,7 +119,9 @@ null 값
 
 ### 4-2. 온도 분류
 
-`ClassifyTemperature(int celsius)` 메서드를 switch 식과 관계 패턴으로 구현하세요. 0도 미만은 "영하", 10도 미만은 "추움", 20도 미만은 "선선함", 30도 미만은 "따뜻함", 그 외는 "더움"을 반환합니다.
+`ClassifyTemperature(int celsius)` 메서드를 switch 식과 관계 패턴으로 
+구현하세요. 0도 미만은 "영하", 10도 미만은 "추움", 20도 미만은 "선선함",
+30도 미만은 "따뜻함", 그 외는 "더움"을 반환합니다.
 
 **실행 결과**
 
@@ -126,7 +139,9 @@ null 값
 
 ### 5-1. and 패턴
 
-`IsValidAge(int age)` 메서드를 `is` 연산자와 `and` 패턴으로 구현하여 0~150 범위인지 확인하세요. `IsTeenager(int age)` 메서드도 구현하여 13~19세인지 확인합니다.
+`IsValidAge(int age)` 메서드를 `is` 연산자와 `and` 패턴으로 구현하여
+0~150 범위인지 확인하세요. `IsTeenager(int age)` 메서드도 구현하여
+13~19세인지 확인합니다.
 
 **실행 결과**
 
@@ -139,7 +154,9 @@ null 값
 
 ### 5-2. or 패턴
 
-`IsWeekend(DayOfWeek day)` 메서드를 `or` 패턴으로 구현하여 주말인지 확인하세요. `IsVowel(char c)` 메서드도 구현하여 모음인지 확인합니다.
+`IsWeekend(DayOfWeek day)` 메서드를 `or` 패턴으로 구현하여 
+주말인지 확인하세요. `IsVowel(char c)` 메서드도 구현하여
+모음인지 확인합니다.
 
 **실행 결과**
 
@@ -152,7 +169,9 @@ null 값
 
 ### 5-3. not 패턴
 
-`IsNotNull(object obj)` 메서드를 `not` 패턴으로 구현하세요. `IsNotEmpty(string s)` 메서드도 구현하여 null이 아니고 빈 문자열도 아닌지 확인합니다.
+`IsNotNull(object obj)` 메서드를 `not` 패턴으로 구현하세요.
+`IsNotEmpty(string s)` 메서드도 구현하여 null이 아니고 빈 문자열도 
+아닌지 확인합니다.
 
 **실행 결과**
 
@@ -165,7 +184,9 @@ null not null: False
 
 ### 5-4. 복합 패턴
 
-`ClassifyNumber(int n)` 메서드를 switch 식과 관계 패턴, `and` 결합자로 구현하세요. 0은 "영", 한 자리 양수/음수, 두 자리 양수, 그 외로 분류합니다.
+`ClassifyNumber(int n)` 메서드를 switch 식과 관계 패턴, 
+`and` 결합자로 구현하세요. 0은 "영", 한 자리 양수/음수, 두 자리 양수,
+그 외로 분류합니다.
 
 **실행 결과**
 
@@ -182,7 +203,8 @@ null not null: False
 
 ## 6. var 패턴
 
-`IsJanetOrJohn(string name)` 메서드를 구현하세요. `name.ToUpper()`의 결과를 `var upper`에 할당하여 재사용하고, "JANET" 또는 "JOHN"인지 확인합니다.
+`IsJanetOrJohn(string name)` 메서드를 구현하세요. `name.ToUpper()`의 결과를
+`var upper`에 할당하여 재사용하고, "JANET" 또는 "JOHN"인지 확인합니다.
 
 **실행 결과**
 
@@ -198,7 +220,9 @@ Mike: False
 
 ### 7-1. 기본 사용법
 
-`Person` 클래스에 `Name`, `Age` 프로퍼티를 정의하세요. `DescribePerson(Person p)` 메서드를 프로퍼티 패턴으로 구현하여 18세 미만은 "미성년자", 65세 미만은 "성인", 65세 이상은 "노인"으로 분류합니다.
+`Person` 클래스에 `Name`, `Age` 프로퍼티를 정의하세요.
+`DescribePerson(Person p)` 메서드를 프로퍼티 패턴으로 구현하여
+18세 미만은 "미성년자", 65세 미만은 "성인", 65세 이상은 "노인"으로 분류합니다.
 
 **실행 결과**
 
